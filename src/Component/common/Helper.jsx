@@ -181,7 +181,7 @@ export const MUSIC_CIRCLE_LIST = [
 export const NAVBAR_LINKS_LIST = [
     {
         title: "Home",
-        url:"/",
+        url:"/Home",
     },
     {
         title: "Blog",

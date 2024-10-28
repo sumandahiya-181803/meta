@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { MUSIC_CIRCLE_LIST } from "./common/Helper";
-import notfound from "../Component/Image/notfound.webp"
+import { MUSIC_CIRCLE_LIST } from "./Helper";
+import notfound from "../Component/../Image/notfound.webp"
 
 const Search = () => {
+
     // State to store the search query
     const [filterData, setFilterData] = useState("");
     // State to manage the number of cards displayed
@@ -25,6 +26,7 @@ const Search = () => {
     };
 
     return (
+
         <div className="App bg-zinc-100 flex flex-col p-16">
             <form className="sticky top-0" action="">
                 <div className="py-2 bg-zinc-100">
@@ -44,12 +46,12 @@ const Search = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {filteredList.length === 0 ? (
                     <div className=" flex flex-col items-center justify-center h-full bg-gradient-to-r from-zinc-50 to-indigo-100 p rounded-xl shadow-xl">
-                    <img className="" src={notfound} alt="" />
-                   
-                   
-                  
-                </div>
-                
+                        <img className="" src={notfound} alt="" />
+
+
+
+                    </div>
+
                 ) : (
                     filteredList.slice(0, visibleCount).map((obj, i) => (
                         <div

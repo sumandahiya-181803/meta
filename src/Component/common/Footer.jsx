@@ -1,70 +1,70 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-// import scanbar from '../../assets/images/home-page/png/scanbar-playstor.png'
-// import { FacbookIcon, TwiterIcon, InstagramIcon, InIcon, MessageSendIcon } from './Icon'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const year = new Date().getFullYear();
+
   return (
-    <div className="bg-black">
+    <div className="bg-zinc-100 pt-[250px] lg:pt-0 ">
       <div className="px-4 max-w-[1170px] xl:px-0 mx-auto py-20">
-        <div className="flex flex-wrap gap-10 sm:gap-6 md:gap-10 lg:gap-14 xl:gap-[86px] sm:justify-between">
-          <div className='flex flex-col max-w-[217px]'>
-            <Link href="/" className="text-white-light text-xl md:text-2xl font-bold !leading-none ">Exclusive</Link>
-            <Link href="/" className="text-white-light text-base md:text-lg lg:text-xl font-medium !leading-[140%] mt-6">Subscribe</Link>
-            <p className="text-white-light text-sm md:text-base !leading-[150%] mt-6">Get 10% off your first order</p>
-            <div className="relative mt-4">
-              <input type="email" placeholder='Enter your email' className='rounded-[4px] max-w-[217px] border-[1.5px] outline-none text-white border-white-light bg-black placeholder:text-white-light placeholder:opacity-40
-        ps-4 py-3 pe-12' />
-              <div className="absolute end-4 top-1/2 -translate-y-1/2 cursor-pointer z-20">
-                {/* <MessageSendIcon /> */}
-              </div>
+        <div className="flex flex-col gap-10 sm:gap-6 md:flex-row flex-wrap md:gap-5 items-center justify-between">
+          
+          {/* About Section */}
+          <div className="flex flex-col max-w-full sm:max-w-[289px] gap-5 p-3 ">
+            <Link to="/" className="text-black text-xl md:text-2xl font-medium">About</Link>
+            <p className="text-gray-700 lg:text-[16px] text-base md:text-lg leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <div className="py-3 flex flex-col gap-2">
+              <Link className="text-black">Email: dahiyasuman@gmail.com</Link>
+              <Link>Phone : 8059181803</Link>
             </div>
           </div>
-          {/* Support data */}
-          {/* <div className="flex flex-col max-w-[180px]"> */}
-            <p className='text-white-light text-base md:text-lg lg:text-xl font-medium !leading-[140%]'>Support</p>
-            <p className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-6">111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
-            <Link to="mailto:exclusive@gmail.com" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-4">exclusive@gmail.com</Link>
-            <Link to="telto:exclusive@gmail.com" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-4">+88015-88888-9999</Link>
-          {/* </div> */}
-          {/* Account data */}
-          {/* <div className="flex flex-col max-w-[123px]">
-            <p className='text-white-light text-base md:text-lg lg:text-xl font-medium !leading-[140%]'>Account</p>
-            <Link to="#" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-6">My Account</Link>
-            <Link to="#" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-4">Login / Register</Link>
-            <Link to="#" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-4">Cart</Link>
-            <Link to="#" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-4">Wishlist</Link>
-            <Link to="#" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-4">Shop</Link>
-          </div> */}
-          {/* Quick Link data */}
-          {/* <div className="flex flex-col max-w-[109px]">
-            <p className='text-white-light text-base md:text-lg lg:text-xl font-medium !leading-[140%]'>Quick Link</p>
-            <Link to="#" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] text-nowrap mt-6">Privacy Policy</Link>
-            <Link to="#" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-4">Terms Of Use</Link>
-            <Link to="#" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-4">FAQ</Link>
-            <Link to="#" className="text-white-light text-sm md:text-base hover:text-red duration-300 !leading-[150%] mt-4">Contact</Link>
-          </div> */}
-          {/* Download App data */}
-          <div className="flex flex-col max-w-[198px]">
-            <p className='text-white-light text-base md:text-lg lg:text-xl font-medium !leading-[140%]'>Download App</p>
-            <p className="text-white-light text-xs !leading-[150%] mt-6">Save $3 with App New User Only</p>
-            {/* <div className="flex mt-6 gap-6">
-              <Link target='_blank' to={"https://www.facebook.com/"} className='group'></Link>
-              <Link target='_blank' to={"https://www.Twiter.com/"} className='group'></Link>
 
-              <Link target='_blank' to={"https://www.facebook.com/"} className='group'></Link>
-              <Link target='_blank' to={"https://www.In.com/"} className='group'></Link>
+          {/* Quick Links and Categories */}
+          <div className="flex w-full sm:w-auto justify-between sm:justify-center gap-10">
+            
+            {/* Quick Links */}
+            <div className="flex flex-col p-2">
+              <span className="text-black text-base md:text-lg lg:text-xl font-medium">Quick Links</span>
+              <Link to="/home" className="text-gray-700 text-base lg:text-[16px] mt-6">Home</Link>
+              <Link to="/blog" className="text-gray-700 text-base lg:text-[16px] mt-6">Blog</Link>
+              <Link to="/single-post" className="text-gray-700 text-base lg:text-[16px] mt-6">Single Post</Link>
+              <Link to="/page" className="text-gray-700 text-base lg:text-[16px] mt-6">Page</Link>
+              <Link to="/contact" className="text-gray-700 text-base lg:text-[16px] mt-6">Contact</Link>
+            </div>
 
-            </div> */}
+            {/* Categories */}
+            <div className="flex flex-col p-2">
+              <span className="text-black text-base md:text-lg lg:text-xl font-medium">Category</span>
+              <p className="text-gray-700 text-base lg:text-[16px] mt-6">Lifestyle</p>
+              <p className="text-gray-700 text-base lg:text-[16px] mt-6">Technology</p>
+              <p className="text-gray-700 text-base lg:text-[16px] mt-6">Travel</p>
+              <p className="text-gray-700 text-base lg:text-[16px] mt-6">Business</p>
+              <p className="text-gray-700 text-base lg:text-[16px] mt-6">Economy</p>
+            </div>
           </div>
+
+          {/* Newsletter Section */}
+          <div className="w-full sm:w-auto md:w-[392px] rounded-lg bg-white flex flex-col items-center gap-4 p-5 shadow-lg">
+            <p className="text-xl md:text-2xl font-semibold text-center">Weekly Newsletter</p>
+            <p className="text-[14px] md:text-[16px] font-medium text-gray-400 text-center">Get blog articles and offers via email</p>
+            <input 
+              className="w-full md:w-[320px] p-3 border-gray-300 border rounded focus:outline-none" 
+              type="email" 
+              placeholder="Your Email" 
+            />
+            <button className="bg-blue-700 w-full md:w-[320px] p-3 rounded text-white">Subscribe</button>
+          </div>
+
         </div>
       </div>
+
       <div className="flex justify-center py-4 border-t border-white/20">
-        <p className='text-white/25 '>Copyright Rimel {year}. All right reserved</p>
+        <p className="text-gray-500 text-sm md:text-base">Copyright Rimel {year}. All rights reserved</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
