@@ -27,13 +27,13 @@ const Search = () => {
 
     return (
 
-        <div className="App bg-zinc-100 flex flex-col p-16">
+        <div className="App bg-zinc-100 flex flex-col py-16 px-4">
             <form className="sticky top-0" action="">
                 <div className="py-2 bg-zinc-100">
                     <input
                         type="text"
                         placeholder="Search"
-                        className="w-[1180px] p-3 border rounded"
+                        className="max-w-[1180px] w-full p-3 border rounded"
                         value={filterData}
                         onChange={(e) => setFilterData(e.target.value)} // Update search query
                     />
@@ -58,7 +58,7 @@ const Search = () => {
 
                             key={i}
                             className="bg-white overflow-hidden group relative after:absolute after:w-full after:h-0 hover:after:h-full after:duration-300 duration-300 
-                            after:bg-opacity-20 after:bg-black after:top-0 after:left-0 p-8 border-2 border-slate-300 hover:border-black !border-opacity-25 hover:shadow-xl hover:shadow-gray-500 rounded shadow-lg flex flex-col w-[370px]"
+                            after:bg-opacity-20 after:bg-black after:top-0 after:left-0 p-8 border-2 border-slate-300 hover:border-black !border-opacity-25 hover:shadow-xl hover:shadow-gray-500 rounded shadow-lg flex flex-col max-w-[370px]"
                         >
                             <Link className="z-20 duration-300 group-hover:left-1/2 bg-black top-1/2 -left-[130%]  text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-500 dark:focus:ring-purple-800  -translate-x-1/2 -translate-y-1/2 absolute p-3 px-5 rounded-lg " to={`/blog/${obj.url}`}>Read More</Link>
                             <img src={obj.Image} alt="" />

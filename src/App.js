@@ -6,20 +6,24 @@ import { Route, Routes } from 'react-router-dom';
 import CardDetail from './Component/CardDetail';
 import NavBar from './Component/common/NavBar';
 import Footer from './Component/common/Footer';
+import ContactForm from './Component/common/ContactForm';
+import DummyForm from './Component/common/DummyForm';
 
 function App() {
   return (
     <div>
-      <NavBar />
+      <DummyForm />
+      <ContactForm/>
+      {/* <NavBar /> */}
     <Routes>
     
-        <Route path='/blog' element={<Search />} />
+        {/* <Route path='/blog' element={<Search />} /> */}
         {/* Dynamic route for each card using :id */}
-        <Route path='/blog/:id' element={<CardDetail />} />
+        {/* <Route path='/blog/:id' element={<CardDetail />} /> */}
         {/* Other static routes */}
-        <Route path='/home' element={<Hero />} />
+        {/* <Route path='/home' element={<Hero />} /> */}
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
